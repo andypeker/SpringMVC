@@ -117,4 +117,8 @@ public class MainController {
         System.out.println("g2g34g34g hweig0239g09j23");
     }
 
+    public void hweig0239g09j2frankie1(){
+        System.out.println("g2g34g34g hweig0239g09j23");
+    }
+
 }
