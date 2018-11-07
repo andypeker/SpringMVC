@@ -100,6 +100,10 @@ public class MainController {
         return "redirect:/users";
     }
 
+    public void hweig0239g09j21(){
+        System.out.println("g2g34g34g hweig0239g09j23");
+    }
+
     public void hweig0239g09j22(){
         System.out.println("g2g34g34g hweig0239g09j23");
     }
