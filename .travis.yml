@@ -5,6 +5,11 @@ env:
   global:
   - secure: "....encrypted data....."
 
+branches:
+  only:
+#    - master
+    - frankie1
+
 script:
 #- ./mvn clean install
 - mvn clean package -DskipTests=true
