@@ -99,4 +99,9 @@ public class MainController {
         userRepository.flush();
         return "redirect:/users";
     }
+
+    public void hweig0239g09j23(){
+        System.out.println("g2g34g34g hweig0239g09j23");
+    }
+
 }
