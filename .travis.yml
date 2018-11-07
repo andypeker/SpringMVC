@@ -6,4 +6,5 @@ env:
   - secure: "....encrypted data....."
 
 script:
-- ./mvn clean install
+#- ./mvn clean install
+- mvn clean package -DskipTests=true
