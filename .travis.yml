@@ -6,4 +6,4 @@ env:
   - secure: "....encrypted data....."
 
 script:
-- ./mvn clean install -B
+- ./mvn clean install
