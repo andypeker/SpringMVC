@@ -17,7 +17,15 @@ after_success:
 - docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
 - docker push $IMAGE_NAME
 
+after_success:
+- docker login -u $DOCKER_USER -p $DOCKER_PASS
+- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
+- export IMAGE_NAME=sivaprasadreddy/freelancerkit
+- docker build -t $IMAGE_NAME:$COMMIT .
+- docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
+- docker push $IMAGE_NAME
+
 deploy:
-  provider: heroku
-  api_key: $HEROKU_API_KEY
-  app: freelancer-kit
+- provider: heroku
+- api_key: $HEROKU_API_KEY
+- app: freelancer-kit
