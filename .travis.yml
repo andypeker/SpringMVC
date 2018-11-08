@@ -12,4 +12,4 @@ branches:
 
 script:
 #- ./mvn clean install
-- mvn clean site:run -DskipTests=true
+- mvn clean site -DskipTests=true
